@@ -14,7 +14,7 @@ body {
 }
 
 #title h1 {
-  font-size: 3em; /* Taille du titre */
+  font-size: 4em; /* Taille du titre augmentée */
   font-weight: 600; /* Poids de la police (semi-bold) */
   margin: 0;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .rectangle {
-  width: 45%;
+  width: 45%; /* Taille adaptée pour une photo paysage */
   text-align: center;
   border: 2px solid #ddd;
   border-radius: 10px;
@@ -49,7 +49,7 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
   text-decoration: none; /* Supprime le soulignement des liens */
-  color: #002d4f; /* Couleur du texte */
+  position: relative; /* Pour positionner le texte sur l'image */
 }
 
 .rectangle img {
@@ -61,7 +61,12 @@ body {
 .rectangle h3 {
   font-size: 1.5em; /* Taille du texte dans les rectangles */
   font-weight: 600; /* Poids de la police (semi-bold) */
-  margin-top: 10px;
+  color: white; /* Texte en blanc */
+  position: absolute; /* Position absolue pour superposer le texte */
+  top: 50%; /* Centrer verticalement */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(-50%, -50%); /* Ajustement précis */
+  margin: 0;
 }
 
 /* Footer avec les réseaux sociaux et l'email */
