@@ -36,12 +36,13 @@ body {
 /* Section avec les rectangles cliquables */
 #rectangles {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Centre les rectangles */
+  gap: 20px; /* Espace entre les rectangles */
   margin-top: 20px;
 }
 
 .rectangle {
-  width: 45%; /* Taille adaptée pour une photo paysage */
+  width: 300px; /* Largeur réduite des rectangles */
   text-align: center;
   border: 2px solid #ddd;
   border-radius: 10px;
