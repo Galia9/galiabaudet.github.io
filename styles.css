@@ -1,88 +1,25 @@
-/* General styles for the entire page */
-body {
-  background-color: #002d4f; /* Blue background */
-  color: white; /* Text is white by default */
-  font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
-  margin: 0;
-  padding: 0;
-}
-
-/* Titre principal */
-#title {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#title h1 {
-  font-size: 4em; /* Taille du titre augmentée */
-  font-weight: 600; /* Poids de la police (semi-bold) */
-  margin: 0;
-}
-
-/* Vidéo en format portrait */
-#video {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.portrait-video {
-  width: 30%; /* Ajustez la largeur pour un format portrait */
-  height: auto;
-  max-height: 70vh; /* Limite la hauteur */
-  object-fit: cover; /* Assure que la vidéo remplit l'espace sans distorsion */
-  border-radius: 8px;
-}
-
-/* Section avec les rectangles cliquables */
-#rectangles {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.rectangle {
-  width: 45%; /* Taille adaptée pour une photo paysage */
-  text-align: center;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-  text-decoration: none; /* Supprime le soulignement des liens */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Animation au survol */
-}
-
-.rectangle:hover {
-  transform: scale(1.05); /* Effet de zoom au survol */
-  background-color: rgba(255, 255, 255, 0.2); /* Fond plus clair au survol */
-}
-
-.circle-image {
-  width: 150px; /* Taille du cercle */
-  height: 150px;
-  border-radius: 50%; /* Rend l'image ronde */
-  overflow: hidden; /* Cache les débordements de l'image */
-  margin: 0 auto 20px; /* Centre l'image et ajoute un espace en bas */
-}
-
-.circle-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
-}
-
-.rectangle h3 {
-  font-size: 1.5em; /* Taille du texte dans les rectangles */
-  font-weight: 600; /* Poids de la police (semi-bold) */
-  color: white; /* Texte en blanc */
-  margin: 0;
-}
-
-/* Footer avec l'email */
+/* Footer avec les réseaux sociaux et l'email */
 footer {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white; /* Couleur des icônes */
+  font-size: 2em; /* Taille des icônes */
+  transition: color 0.3s ease; /* Animation au survol */
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Changement de couleur au survol */
 }
 
 footer p {
