@@ -1,7 +1,7 @@
 /* General styles for the entire page */
 body {
-  background-color: #002d4f; /* Blue background */
-  color: white; /* Text is white by default */
+  background-color: #002d4f; /* Nouveau bleu */
+  color: white; /* Texte en blanc par défaut */
   font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
   margin: 0;
   padding: 0;
@@ -42,7 +42,7 @@ body {
 }
 
 .rectangle {
-  width: 400px; /* Largeur réduite des rectangles */
+  width: 300px; /* Largeur réduite des rectangles */
   text-align: center;
   border: 2px solid #ddd;
   border-radius: 10px;
