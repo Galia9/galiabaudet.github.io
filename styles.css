@@ -1,27 +1,39 @@
 /* General styles for the entire page */
 body {
-  background-color: #002d4f; /* Blue background, similar to risewithgalia.com */
+  background-color: #002d4f; /* Blue background */
   color: white; /* Text is white by default */
   font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
   margin: 0;
   padding: 0;
 }
 
-/* Video section */
+/* Titre principal */
+#title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#title h1 {
+  font-size: 3em; /* Taille du titre */
+  font-weight: 600; /* Poids de la police (semi-bold) */
+  margin: 0;
+}
+
+/* Vidéo en format portrait */
 #video {
   text-align: center;
   margin: 20px 0;
 }
 
 .portrait-video {
-  width: 50%;
+  width: 30%; /* Ajustez la largeur pour un format portrait */
   height: auto;
-  max-height: 90vh; /* Limits the height to 90% of the screen */
-  object-fit: cover; /* Ensures the video fills the space without distortion */
+  max-height: 70vh; /* Limite la hauteur */
+  object-fit: cover; /* Assure que la vidéo remplit l'espace sans distorsion */
   border-radius: 8px;
 }
 
-/* Section with clickable rectangles */
+/* Section avec les rectangles cliquables */
 #rectangles {
   display: flex;
   justify-content: space-around;
@@ -35,7 +47,9 @@ body {
   border-radius: 10px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for emphasis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #002d4f; /* Couleur du texte */
 }
 
 .rectangle img {
@@ -44,32 +58,42 @@ body {
   border-radius: 8px;
 }
 
-h2, h3 {
-  font-family: 'Poppins', Arial, sans-serif; /* Appliquer Poppins aux titres */
-  font-weight: 600; /* Poids de la police pour les titres (semi-bold) */
-}
-
-h2 {
-  font-size: 2em; /* Taille du titre h2 */
-}
-
-h3 {
-  font-size: 1.5em; /* Taille du titre h3 */
+.rectangle h3 {
+  font-size: 1.5em; /* Taille du texte dans les rectangles */
+  font-weight: 600; /* Poids de la police (semi-bold) */
   margin-top: 10px;
 }
 
+/* Footer avec les réseaux sociaux et l'email */
 footer {
   text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  font-family: 'Poppins', Arial, sans-serif; /* Appliquer Poppins au footer */
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Taille des icônes */
+  height: auto;
+  filter: brightness(0) invert(1); /* Rend les icônes blanches */
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
 }
 
 footer a {
-  color: white; /* Couleur du lien dans le footer */
-  text-decoration: none; /* Supprimer le soulignement du lien */
+  color: white; /* Couleur du lien email */
+  text-decoration: none; /* Supprime le soulignement du lien */
 }
 
 footer a:hover {
-  text-decoration: underline; /* Souligner le lien au survol */
+  text-decoration: underline; /* Souligne le lien au survol */
 }
