@@ -83,10 +83,14 @@ footer {
   margin-bottom: 10px;
 }
 
-.social-icons img {
-  width: 30px; /* Taille des icônes */
-  height: auto;
-  filter: brightness(0) invert(1); /* Rend les icônes blanches */
+.social-icons a {
+  color: white; /* Couleur des icônes */
+  font-size: 2em; /* Taille des icônes */
+  transition: color 0.3s ease; /* Animation au survol */
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Changement de couleur au survol */
 }
 
 footer p {
