@@ -1,39 +1,72 @@
-/* Section avec les photos rondes cliquables */
-#categories {
-  display: flex;
-  justify-content: center; /* Centre les catégories */
-  align-items: center; /* Aligne les catégories à la même hauteur */
-  gap: 60px; /* Espace entre les catégories */
-  margin-top: 40px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galia Baudet | Personal Branding</title>
+  <!-- Ajoutez la police Poppins depuis Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Ajoutez Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-.category {
-  text-align: center;
-  text-decoration: none; /* Supprime le soulignement des liens */
-  color: white; /* Couleur du texte */
-  transition: transform 0.3s ease; /* Animation au survol */
-}
+  <!-- Titre principal -->
+  <section id="title">
+    <h1>GALIA BAUDET</h1>
+  </section>
 
-.category:hover {
-  transform: scale(1.05); /* Effet de zoom au survol */
-}
+  <!-- Vidéo en format portrait -->
+  <section id="video">
+    <video class="portrait-video" controls>
+      <source src="path-to-your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
-.circle-image {
-  width: 250px; /* Taille du cercle augmentée */
-  height: 250px;
-  border-radius: 50%; /* Rend l'image ronde */
-  overflow: hidden; /* Cache les débordements de l'image */
-  margin: 0 auto 20px; /* Centre l'image et ajoute un espace en bas */
-}
+  <!-- Section avec les photos rondes cliquables -->
+  <section id="categories">
+    <!-- Categorie RiseWithGalia -->
+    <a href="lien-vers-risewithgalia.html" class="category">
+      <div class="circle-image">
+        <img src="https://i.imgur.com/lpKVX3E.jpg" alt="Rise With Galia">
+      </div>
+      <h3>RiseWithGalia</h3>
+    </a>
 
-.circle-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
-}
+    <!-- Categorie My Services -->
+    <a href="lien-vers-services.html" class="category">
+      <div class="circle-image">
+        <img src="https://i.imgur.com/iks96s8.jpg" alt="My Services">
+      </div>
+      <h3>My Services</h3>
+    </a>
+  </section>
 
-.category h3 {
-  font-size: 1.8em; /* Taille du texte augmentée */
-  font-weight: 600; /* Poids de la police (semi-bold) */
-  margin: 0;
-}
+  <!-- Footer avec les réseaux sociaux et l'email -->
+  <footer>
+    <div class="social-icons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/galia-baudet-5811b042/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/galia.bdt" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/risewithgalia/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@risewithgalia" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+    <p><a href="mailto:baudet.galia@gmail.com">baudet.galia@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
