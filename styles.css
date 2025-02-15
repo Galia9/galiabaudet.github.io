@@ -13,6 +13,20 @@
 }
 
 
+/* Title section with blue band */
+.title-container {
+  background-color: #003366; /* Bleu foncé */
+  padding: 40px 20px; /* Ajoute de l'espace autour du texte */
+  text-align: center; /* Centre le texte */
+  width: 100%; /* S'assure que la bande prend toute la largeur */
+}
+
+.title-container h1, .title-container p {
+  color: white; /* Change la couleur du texte en blanc pour le contraste */
+  margin: 0; /* Retire les marges par défaut */
+}
+
+
 /* Basic styling for rectangles */
 #rectangles {
   display: flex;
