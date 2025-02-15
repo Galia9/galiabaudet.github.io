@@ -1,6 +1,6 @@
 /* General styles for the entire page */
 body {
-  background-color: #2C396D; /* Nouveau bleu */
+  background-color: #002d4f; /* Nouveau bleu */
   color: white; /* Texte en blanc par défaut */
   font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
   margin: 0;
@@ -33,34 +33,28 @@ body {
   border-radius: 8px;
 }
 
-/* Section avec les rectangles cliquables */
-#rectangles {
+/* Section avec les photos rondes cliquables */
+#categories {
   display: flex;
-  justify-content: center; /* Centre les rectangles */
-  gap: 20px; /* Espace entre les rectangles */
-  margin-top: 20px;
+  justify-content: center; /* Centre les catégories */
+  gap: 40px; /* Espace entre les catégories */
+  margin-top: 40px;
 }
 
-.rectangle {
-  width: 300px; /* Largeur réduite des rectangles */
+.category {
   text-align: center;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
   text-decoration: none; /* Supprime le soulignement des liens */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Animation au survol */
+  color: white; /* Couleur du texte */
+  transition: transform 0.3s ease; /* Animation au survol */
 }
 
-.rectangle:hover {
+.category:hover {
   transform: scale(1.05); /* Effet de zoom au survol */
-  background-color: rgba(255, 255, 255, 0.2); /* Fond plus clair au survol */
 }
 
 .circle-image {
-  width: 150px; /* Taille du cercle */
-  height: 150px;
+  width: 200px; /* Taille du cercle augmentée */
+  height: 200px;
   border-radius: 50%; /* Rend l'image ronde */
   overflow: hidden; /* Cache les débordements de l'image */
   margin: 0 auto 20px; /* Centre l'image et ajoute un espace en bas */
@@ -72,17 +66,16 @@ body {
   object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
 }
 
-.rectangle h3 {
-  font-size: 1.5em; /* Taille du texte dans les rectangles */
+.category h3 {
+  font-size: 1.5em; /* Taille du texte */
   font-weight: 600; /* Poids de la police (semi-bold) */
-  color: white; /* Texte en blanc */
   margin: 0;
 }
 
 /* Footer avec les réseaux sociaux et l'email */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
   padding: 20px;
 }
 
