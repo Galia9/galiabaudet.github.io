@@ -42,7 +42,7 @@ body {
 }
 
 .rectangle {
-  width: 300px; /* Largeur réduite des rectangles */
+  width: 400px; /* Largeur réduite des rectangles */
   text-align: center;
   border: 2px solid #ddd;
   border-radius: 10px;
