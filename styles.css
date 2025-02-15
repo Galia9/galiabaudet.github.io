@@ -46,51 +46,43 @@ body {
   border: 2px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
   text-decoration: none; /* Supprime le soulignement des liens */
-  position: relative; /* Pour positionner le texte sur l'image */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Animation au survol */
 }
 
-.rectangle img {
+.rectangle:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+  background-color: rgba(255, 255, 255, 0.2); /* Fond plus clair au survol */
+}
+
+.circle-image {
+  width: 150px; /* Taille du cercle */
+  height: 150px;
+  border-radius: 50%; /* Rend l'image ronde */
+  overflow: hidden; /* Cache les débordements de l'image */
+  margin: 0 auto 20px; /* Centre l'image et ajoute un espace en bas */
+}
+
+.circle-image img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
 }
 
 .rectangle h3 {
   font-size: 1.5em; /* Taille du texte dans les rectangles */
   font-weight: 600; /* Poids de la police (semi-bold) */
   color: white; /* Texte en blanc */
-  position: absolute; /* Position absolue pour superposer le texte */
-  top: 50%; /* Centrer verticalement */
-  left: 50%; /* Centrer horizontalement */
-  transform: translate(-50%, -50%); /* Ajustement précis */
   margin: 0;
 }
 
-/* Footer avec les réseaux sociaux et l'email */
+/* Footer avec l'email */
 footer {
   text-align: center;
   margin-top: 40px;
   padding: 20px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Espace entre les icônes */
-  margin-bottom: 10px;
-}
-
-.social-icons a {
-  color: white; /* Couleur des icônes */
-  font-size: 2em; /* Taille des icônes */
-  transition: color 0.3s ease; /* Animation au survol */
-}
-
-.social-icons a:hover {
-  color: #ddd; /* Changement de couleur au survol */
 }
 
 footer p {
