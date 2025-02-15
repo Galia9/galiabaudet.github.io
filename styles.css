@@ -12,7 +12,6 @@
   border-radius: 8px;
 }
 
-
 /* Title section with blue band */
 .title-container {
   background-color: #003366; 
@@ -25,7 +24,6 @@
   color: white;
   margin: 0; 
 }
-
 
 /* Basic styling for rectangles */
 #rectangles {
