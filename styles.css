@@ -2,7 +2,7 @@
 body {
   background-color: #002d4f; /* Blue background, similar to risewithgalia.com */
   color: white; /* Text is white by default */
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
   margin: 0;
   padding: 0;
 }
@@ -44,8 +44,17 @@ body {
   border-radius: 8px;
 }
 
+h2, h3 {
+  font-family: 'Poppins', Arial, sans-serif; /* Appliquer Poppins aux titres */
+  font-weight: 600; /* Poids de la police pour les titres (semi-bold) */
+}
+
+h2 {
+  font-size: 2em; /* Taille du titre h2 */
+}
+
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em; /* Taille du titre h3 */
   margin-top: 10px;
 }
 
@@ -53,4 +62,14 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
+  font-family: 'Poppins', Arial, sans-serif; /* Appliquer Poppins au footer */
+}
+
+footer a {
+  color: white; /* Couleur du lien dans le footer */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Souligner le lien au survol */
 }
