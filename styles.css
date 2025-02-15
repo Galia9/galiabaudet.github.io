@@ -37,7 +37,8 @@ body {
 #categories {
   display: flex;
   justify-content: center; /* Centre les catégories */
-  gap: 40px; /* Espace entre les catégories */
+  align-items: center; /* Aligne les catégories à la même hauteur */
+  gap: 60px; /* Espace entre les catégories */
   margin-top: 40px;
 }
 
@@ -53,8 +54,8 @@ body {
 }
 
 .circle-image {
-  width: 200px; /* Taille du cercle augmentée */
-  height: 200px;
+  width: 250px; /* Taille du cercle augmentée */
+  height: 250px;
   border-radius: 50%; /* Rend l'image ronde */
   overflow: hidden; /* Cache les débordements de l'image */
   margin: 0 auto 20px; /* Centre l'image et ajoute un espace en bas */
@@ -67,7 +68,7 @@ body {
 }
 
 .category h3 {
-  font-size: 1.5em; /* Taille du texte */
+  font-size: 1.8em; /* Taille du texte augmentée */
   font-weight: 600; /* Poids de la police (semi-bold) */
   margin: 0;
 }
