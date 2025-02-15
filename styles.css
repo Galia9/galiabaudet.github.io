@@ -7,23 +7,23 @@
 .portrait-video {
   width: 50%;
   height: auto;
-  max-height: 90vh; /* limite la hauteur à 90% de la hauteur de l'écran */
-  object-fit: cover; /* Assure que l'image de la vidéo remplit l'espace sans distorsion */
+  max-height: 90vh; 
+  object-fit: cover; 
   border-radius: 8px;
 }
 
 
 /* Title section with blue band */
 .title-container {
-  background-color: #003366; /* Bleu foncé */
-  padding: 40px 20px; /* Ajoute de l'espace autour du texte */
-  text-align: center; /* Centre le texte */
-  width: 100%; /* S'assure que la bande prend toute la largeur */
+  background-color: #003366; 
+  padding: 40px 20px; 
+  text-align: center; 
+  width: 100%; 
 }
 
 .title-container h1, .title-container p {
-  color: white; /* Change la couleur du texte en blanc pour le contraste */
-  margin: 0; /* Retire les marges par défaut */
+  color: white;
+  margin: 0; 
 }
 
 
