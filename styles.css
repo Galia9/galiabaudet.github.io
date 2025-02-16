@@ -89,7 +89,7 @@ body {
 #services {
   display: flex;
   flex-direction: column; /* Les bandes sont empilées verticalement */
-  gap: 40px; /* Espace entre les bandes */
+  gap: 20px; /* Espace entre les bandes */
   margin: 40px auto;
   max-width: 800px; /* Largeur maximale pour une meilleure lisibilité */
 }
@@ -100,11 +100,15 @@ body {
   gap: 30px; /* Espace entre le cercle et le contenu */
   text-decoration: none; /* Supprime le soulignement des liens */
   color: white; /* Couleur du texte */
-  transition: transform 0.3s ease; /* Animation au survol */
+  background-color: #003366; /* Nouveau bleu pour les bandes */
+  padding: 20px; /* Espace intérieur */
+  border-radius: 10px; /* Bordures arrondies */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
 }
 
 .service-band:hover {
   transform: scale(1.02); /* Effet de zoom au survol */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre au survol */
 }
 
 .service-circle {
