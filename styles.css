@@ -1,7 +1,7 @@
 /* General styles for the entire page */
 body {
-  background-color: #002d4f; /* Nouveau bleu */
-  color: white; /* Texte en blanc par défaut */
+  background-color: #000000; /* Fond noir */
+  color: #FFD700; /* Police dorée */
   font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@ body {
 .category {
   text-align: center;
   text-decoration: none; /* Supprime le soulignement des liens */
-  color: white; /* Couleur du texte */
+  color: #FFD700; /* Police dorée */
   transition: transform 0.3s ease; /* Animation au survol */
 }
 
@@ -99,7 +99,7 @@ body {
   align-items: center; /* Aligne le cercle et le contenu verticalement */
   gap: 30px; /* Espace entre le cercle et le contenu */
   text-decoration: none; /* Supprime le soulignement des liens */
-  color: white; /* Couleur du texte */
+  color: #FFD700; /* Police dorée */
   background-color: #003366; /* Nouveau bleu pour les bandes */
   padding: 20px; /* Espace intérieur */
   border-radius: 10px; /* Bordures arrondies */
@@ -375,13 +375,13 @@ body {
 }
 
 .social-icons a {
-  color: white; /* Couleur des icônes */
+  color: #FFD700; /* Couleur dorée pour les icônes */
   font-size: 4em; /* Taille imposante des icônes */
   transition: color 0.3s ease; /* Animation au survol */
 }
 
 .social-icons a:hover {
-  color: #ffa500; /* Changement de couleur au survol */
+  color: #b8860b; /* Changement de couleur au survol (or foncé) */
 }
 
 /* Footer */
@@ -397,7 +397,7 @@ footer p {
 }
 
 footer a {
-  color: white; /* Couleur du lien email */
+  color: #FFD700; /* Couleur dorée pour le lien email */
   text-decoration: none; /* Supprime le soulignement du lien */
 }
 
