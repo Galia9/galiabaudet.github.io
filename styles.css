@@ -136,43 +136,6 @@ body {
   margin: 0;
 }
 
-/* Footer avec les réseaux sociaux et l'email */
-footer {
-  text-align: center;
-  margin-top: 60px;
-  padding: 20px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Espace entre les icônes */
-  margin-bottom: 10px;
-}
-
-.social-icons a {
-  color: white; /* Couleur des icônes */
-  font-size: 2em; /* Taille des icônes */
-  transition: color 0.3s ease; /* Animation au survol */
-}
-
-.social-icons a:hover {
-  color: #ddd; /* Changement de couleur au survol */
-}
-
-footer p {
-  margin: 0;
-  font-size: 1em;
-}
-
-footer a {
-  color: white; /* Couleur du lien email */
-  text-decoration: none; /* Supprime le soulignement du lien */
-}
-
-footer a:hover {
-  text-decoration: underline; /* Souligne le lien au survol */
-}
 /* Titre principal de la page Training Management */
 #training-title {
   text-align: center;
@@ -311,4 +274,42 @@ footer a:hover {
 .portfolio-item p {
   font-size: 1em;
   margin: 0;
+}
+
+/* Footer avec les réseaux sociaux et l'email */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white; /* Couleur des icônes */
+  font-size: 2em; /* Taille des icônes */
+  transition: color 0.3s ease; /* Animation au survol */
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Changement de couleur au survol */
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: white; /* Couleur du lien email */
+  text-decoration: none; /* Supprime le soulignement du lien */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Souligne le lien au survol */
 }
