@@ -351,6 +351,18 @@ body {
   color: #ffa500; /* Couleur orange pour les noms des témoins */
 }
 
+/* Titre principal de la page RiseWithGalia */
+#risewithgalia-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#risewithgalia-title h1 {
+  font-size: 4em; /* Taille du titre identique aux autres pages */
+  font-weight: 600;
+  margin: 0;
+}
+
 /* Section : Services - RiseWithGalia */
 #risewithgalia-services {
   padding: 40px 20px;
@@ -414,6 +426,7 @@ body {
   font-size: 1em; /* Taille de la police */
   line-height: 1.6;
   margin: 0;
+  text-align: justify; /* Texte justifié */
 }
 
 /* Footer */
