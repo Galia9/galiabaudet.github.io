@@ -169,23 +169,16 @@ body {
 
 .service-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  gap: 20px; /* Espace entre les services */
+  justify-content: center; /* Centre les services horizontalement */
 }
 
 .service-item {
   background-color: #002d4f;
   padding: 20px;
   border-radius: 10px;
-  width: 45%;
+  width: 45%; /* Largeur des services */
   text-align: left;
-}
-
-.service-item i {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #ffa500; /* Couleur orange pour les icônes */
 }
 
 .service-item h3 {
@@ -258,12 +251,6 @@ body {
   border-radius: 10px;
   width: 45%;
   text-align: left;
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
 }
 
 .portfolio-item h3 {
