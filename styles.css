@@ -380,6 +380,11 @@ body {
 }
 
 .service-band {
+  display: flex;
+  align-items: flex-start; /* Alignement en haut */
+  gap: 30px; /* Espace entre l'image et la description */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: white; /* Couleur du texte */
   background-color: #003366; /* Nouveau bleu pour les bandes */
   padding: 20px; /* Espace intérieur */
   border-radius: 10px; /* Bordures arrondies */
