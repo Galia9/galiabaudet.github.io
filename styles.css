@@ -300,3 +300,71 @@ footer a {
 footer a:hover {
   text-decoration: underline; /* Souligne le lien au survol */
 }
+/* Titre principal de la page Dance Classes */
+#dance-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#dance-title h1 {
+  font-size: 4em;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Introduction */
+#dance-intro {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+#dance-intro p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Section : Classes */
+#dance-classes {
+  padding: 40px 20px;
+}
+
+.class-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.class-band {
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.class-band h2 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+}
+
+.class-band h3.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #ffa500; /* Couleur orange pour le sous-titre */
+  margin: 0 0 20px 0;
+}
+
+.class-band p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.class-band blockquote {
+  font-style: italic;
+  color: #ddd;
+  margin: 0;
+  padding-left: 20px;
+  border-left: 3px solid #ffa500; /* Bordure orange à gauche */
+}
