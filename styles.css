@@ -351,19 +351,7 @@ body {
   color: #ffa500; /* Couleur orange pour les noms des témoins */
 }
 
-/* Titre principal de la page RiseWithGalia */
-#risewithgalia-title {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#risewithgalia-title h1 {
-  font-size: 4em; /* Taille du titre identique aux autres pages */
-  font-weight: 600;
-  margin: 0;
-}
-
-/* Section : Services */
+/* Section : Services - RiseWithGalia */
 #risewithgalia-services {
   padding: 40px 20px;
 }
@@ -391,36 +379,41 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre au survol */
 }
 
+.service-content {
+  display: flex;
+  align-items: flex-start; /* Alignement en haut */
+  gap: 30px; /* Espace entre l'image et la description */
+}
+
 .service-content h2 {
   font-size: 2em; /* Taille du titre */
   font-weight: 600;
-  margin-bottom: 20px;
+  margin: 0 0 10px 0; /* Espace sous le titre */
   text-align: left;
 }
 
-.service-description {
-  display: flex;
-  align-items: flex-start; /* Alignement en haut */
-  gap: 20px; /* Espace entre l'image et la description */
-}
-
 .service-image {
-  width: 40%; /* Largeur de l'image */
-  border-radius: 10px; /* Bordures arrondies */
+  width: 250px; /* Taille du cercle identique à la homepage */
+  height: 250px;
+  border-radius: 50%; /* Rend l'image ronde */
   overflow: hidden; /* Cache les débordements de l'image */
+  flex-shrink: 0; /* Empêche le cercle de rétrécir */
 }
 
 .service-image img {
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Assure que l'image remplit l'espace sans distorsion */
+  height: 100%;
+  object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
+}
+
+.service-description {
+  flex: 1; /* Prend l'espace restant */
 }
 
 .service-description p {
   font-size: 1em; /* Taille de la police */
   line-height: 1.6;
   margin: 0;
-  flex: 1; /* Prend l'espace restant */
 }
 
 /* Footer */
