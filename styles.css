@@ -173,3 +173,142 @@ footer a {
 footer a:hover {
   text-decoration: underline; /* Souligne le lien au survol */
 }
+/* Titre principal de la page Training Management */
+#training-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#training-title h1 {
+  font-size: 4em;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Section : My Services */
+#training-services {
+  background-color: #003366;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.service-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item {
+  background-color: #002d4f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: left;
+}
+
+.service-item i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffa500; /* Couleur orange pour les icônes */
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.service-item p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Section : Testimonials */
+#testimonials {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial-item {
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: left;
+}
+
+.testimonial-item blockquote {
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial-item p {
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+/* Section : Portfolio */
+#portfolio {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: left;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.portfolio-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.portfolio-item p {
+  font-size: 1em;
+  margin: 0;
+}
