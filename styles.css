@@ -363,19 +363,20 @@ body {
 }
 
 .social-container p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.5em; /* Taille de la phrase augmentée */
+  margin-bottom: 30px; /* Espace sous la phrase */
+  text-align: center; /* Centrer la phrase */
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Espace entre les icônes */
+  gap: 50px; /* Espace entre les icônes */
 }
 
 .social-icons a {
   color: white; /* Couleur des icônes */
-  font-size: 3em; /* Taille imposante des icônes */
+  font-size: 4em; /* Taille imposante des icônes */
   transition: color 0.3s ease; /* Animation au survol */
 }
 
