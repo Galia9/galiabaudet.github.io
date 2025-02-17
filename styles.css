@@ -387,8 +387,8 @@ body {
 
 .service-band {
   display: flex;
-  align-items: center;
-  gap: 30px; /* Espace entre le cercle et le contenu */
+  align-items: flex-start; /* Alignement en haut */
+  gap: 20px; /* Espace entre la photo et la description */
   text-decoration: none; /* Supprime le soulignement des liens */
   color: white; /* Couleur du texte */
   background-color: #003366; /* Nouveau bleu pour les bandes */
@@ -402,12 +402,25 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre au survol */
 }
 
+.service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Espace entre le titre et la photo */
+}
+
+.service-header h3 {
+  font-size: 1.5em; /* Taille du titre réduite */
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
 .service-circle {
   width: 150px; /* Taille du cercle */
   height: 150px;
   border-radius: 50%; /* Rend l'image ronde */
   overflow: hidden; /* Cache les débordements de l'image */
-  flex-shrink: 0; /* Empêche le cercle de rétrécir */
 }
 
 .service-circle img {
@@ -416,14 +429,13 @@ body {
   object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
 }
 
-.service-content h2 {
-  font-size: 1.8em; /* Taille du titre */
-  font-weight: 600; /* Poids de la police (semi-bold) */
-  margin: 0 0 10px 0;
+.service-description {
+  flex: 1; /* Prend l'espace restant */
 }
 
-.service-content p {
-  font-size: 1em; /* Taille du texte */
+.service-description p {
+  font-size: 0.9em; /* Taille de la police réduite */
+  line-height: 1.6;
   margin: 0;
 }
 
