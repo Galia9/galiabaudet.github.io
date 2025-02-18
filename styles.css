@@ -8,380 +8,71 @@ body {
 }
 
 /* Titre principal de la homepage */
-#title {
+#risewithgalia-title {
   text-align: center;
   margin-top: 50px;
 }
 
-#title h1 {
+#risewithgalia-title h1 {
   font-size: 4em; /* Taille du titre augmentée */
   font-weight: 600; /* Poids de la police (semi-bold) */
   margin: 0;
 }
 
-/* Vidéo en format portrait */
-#video {
-  text-align: center;
-  margin: 20px 0;
+/* Section des services */
+#risewithgalia-services {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.portrait-video {
-  width: 30%; /* Ajustez la largeur pour un format portrait */
-  height: auto;
-  max-height: 70vh; /* Limite la hauteur */
-  object-fit: cover; /* Assure que la vidéo remplit l'espace sans distorsion */
-  border-radius: 8px;
-}
-
-/* Section avec les photos rondes cliquables (homepage) */
-#categories {
+.service-container {
   display: flex;
-  justify-content: center; /* Centre les catégories */
-  align-items: center; /* Aligne les catégories à la même hauteur */
-  gap: 60px; /* Espace entre les catégories */
-  margin-top: 40px;
-}
-
-.category {
-  text-align: center;
-  text-decoration: none; /* Supprime le soulignement des liens */
-  color: white; /* Texte blanc */
-  transition: transform 0.3s ease; /* Animation au survol */
-}
-
-.category:hover {
-  transform: scale(1.05); /* Effet de zoom au survol */
-}
-
-.circle-image {
-  width: 250px; /* Taille du cercle augmentée */
-  height: 250px;
-  border-radius: 50%; /* Rend l'image ronde */
-  overflow: hidden; /* Cache les débordements de l'image */
-  margin: 0 auto 20px; /* Centre l'image et ajoute un espace en bas */
-}
-
-.circle-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
-}
-
-.category h3 {
-  font-size: 1.8em; /* Taille du texte augmentée */
-  font-weight: 600; /* Poids de la police (semi-bold) */
-  margin: 0;
-}
-
-/* Titre principal de la page My Services */
-#services-title {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#services-title h1 {
-  font-size: 4em; /* Taille du titre augmentée */
-  font-weight: 600; /* Poids de la police (semi-bold) */
-  margin: 0;
-}
-
-/* Section des services (page My Services) */
-#services {
-  display: flex;
-  flex-direction: column; /* Les bandes sont empilées verticalement */
+  flex-direction: column;
   gap: 20px; /* Espace entre les bandes */
-  margin: 40px auto;
-  max-width: 800px; /* Largeur maximale pour une meilleure lisibilité */
 }
 
 .service-band {
   display: flex;
-  align-items: center; /* Aligne le cercle et le contenu verticalement */
-  gap: 30px; /* Espace entre le cercle et le contenu */
-  text-decoration: none; /* Supprime le soulignement des liens */
-  color: white; /* Texte blanc */
-  background-color: #003366; /* Nouveau bleu pour les bandes */
-  padding: 20px; /* Espace intérieur */
-  border-radius: 10px; /* Bordures arrondies */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+  align-items: center;
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-band:hover {
-  transform: scale(1.02); /* Effet de zoom au survol */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.service-circle {
-  width: 150px; /* Taille du cercle */
+.service-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-image img {
+  width: 150px; /* Taille de l'image */
   height: 150px;
-  border-radius: 50%; /* Rend l'image ronde */
-  overflow: hidden; /* Cache les débordements de l'image */
-  flex-shrink: 0; /* Empêche le cercle de rétrécir */
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.service-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Assure que l'image remplit le cercle sans distorsion */
+.service-description {
+  flex: 1;
 }
 
-.service-content h2 {
-  font-size: 1.8em; /* Taille du titre */
-  font-weight: 600; /* Poids de la police (semi-bold) */
+.service-description h2 {
+  font-size: 1.8em;
   margin: 0 0 10px 0;
 }
 
-.service-content p {
-  font-size: 1em; /* Taille du texte */
-  margin: 0;
-}
-
-/* Titre principal de la page Training Management */
-#training-title {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#training-title h1 {
-  font-size: 4em;
-  font-weight: 600;
-  margin: 0;
-}
-
-/* Section : My Services */
-#training-services {
-  background-color: #003366;
-  padding: 40px 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-}
-
-.service-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.service-container h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.service-list {
-  display: flex;
-  gap: 20px; /* Espace entre les services */
-  justify-content: center; /* Centre les services horizontalement */
-}
-
-.service-item {
-  background-color: #002d4f;
-  padding: 20px;
-  border-radius: 10px;
-  width: 45%; /* Largeur des services */
-  text-align: left;
-}
-
-.service-item h3 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-.service-item p {
+.service-description p {
   font-size: 1em;
   margin: 0;
-}
-
-/* Section : Testimonials */
-#testimonials {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#testimonials h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.testimonial-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.testimonial-item {
-  background-color: #003366;
-  padding: 20px;
-  border-radius: 10px;
-  width: 45%;
-  text-align: left;
-}
-
-.testimonial-item blockquote {
-  font-style: italic;
-  margin: 0;
-}
-
-.testimonial-item p {
-  margin: 10px 0 0;
-  font-weight: 600;
-}
-
-/* Section : Portfolio */
-#portfolio {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#portfolio h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.portfolio-item {
-  background-color: #003366;
-  padding: 20px;
-  border-radius: 10px;
-  width: 45%;
-  text-align: left;
-}
-
-.portfolio-item h3 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-.portfolio-item p {
-  font-size: 1em;
-  margin: 0;
-}
-
-/* Titre principal de la page Dance Classes */
-#dance-title {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#dance-title h1 {
-  font-size: 4em;
-  font-weight: 600;
-  margin: 0;
-}
-
-/* Vidéo en format portrait */
-#dance-video {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.portrait-video {
-  width: 30%; /* Ajustez la largeur pour un format portrait */
-  height: auto;
-  max-height: 70vh; /* Limite la hauteur */
-  object-fit: cover; /* Assure que la vidéo remplit l'espace sans distorsion */
-  border-radius: 8px;
-}
-
-/* Introduction */
-#dance-intro {
-  text-align: center;
-  margin: 40px auto;
-  max-width: 800px;
-}
-
-#dance-intro p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-/* Section : Classes */
-#dance-classes {
-  padding: 40px 20px;
-}
-
-.class-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.class-band {
-  background-color: #003366;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.class-band h2 {
-  font-size: 2em;
-  margin: 0 0 10px 0;
-}
-
-.class-band h3.subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 1.2em;
-  color: #ffa500; /* Couleur orange pour le sous-titre */
-  margin: 0 0 20px 0;
-}
-
-.class-band p {
-  font-size: 1em;
-  line-height: 1.6;
-  margin: 0 0 20px 0;
-}
-
-.class-band blockquote {
-  font-style: italic;
-  color: #ddd;
-  margin: 0;
-  padding-left: 20px;
-  border-left: 3px solid #ffa500; /* Bordure orange à gauche */
-}
-
-.class-band blockquote strong {
-  font-weight: 600;
-  color: #ffa500; /* Couleur orange pour les noms des témoins */
-}
-
-/* Section : Réseaux sociaux */
-#social-networks {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.social-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.social-container p {
-  font-size: 1.5em; /* Taille de la phrase augmentée */
-  margin-bottom: 30px; /* Espace sous la phrase */
-  text-align: center; /* Centrer la phrase */
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 50px; /* Espace entre les icônes */
-}
-
-.social-icons a {
-  color: white; /* Couleur blanche pour les icônes */
-  font-size: 4em; /* Taille imposante des icônes */
-  transition: color 0.3s ease; /* Animation au survol */
-}
-
-.social-icons a:hover {
-  color: #ffa500; /* Changement de couleur au survol (orange) */
 }
 
 /* Footer */
@@ -403,4 +94,319 @@ footer a {
 
 footer a:hover {
   text-decoration: underline; /* Souligne le lien au survol */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 2em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffa500; /* Changement de couleur au survol (orange) */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #risewithgalia-title h1 {
+    font-size: 3em; /* Taille du titre réduite pour les petits écrans */
+  }
+
+  .service-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-description h2 {
+    font-size: 1.5em;
+  }
+
+  .service-description p {
+    font-size: 0.9em;
+  }
+}/* General styles for the entire page */
+body {
+  background-color: #002d4f; /* Fond bleu */
+  color: white; /* Texte blanc */
+  font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
+  margin: 0;
+  padding: 0;
+}
+
+/* Titre principal de la homepage */
+#risewithgalia-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#risewithgalia-title h1 {
+  font-size: 4em; /* Taille du titre augmentée */
+  font-weight: 600; /* Poids de la police (semi-bold) */
+  margin: 0;
+}
+
+/* Section des services */
+#risewithgalia-services {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espace entre les bandes */
+}
+
+.service-band {
+  display: flex;
+  align-items: center;
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-band:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-image img {
+  width: 150px; /* Taille de l'image */
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-description {
+  flex: 1;
+}
+
+.service-description h2 {
+  font-size: 1.8em;
+  margin: 0 0 10px 0;
+}
+
+.service-description p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: white; /* Couleur blanche pour le lien email */
+  text-decoration: none; /* Supprime le soulignement du lien */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Souligne le lien au survol */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 2em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffa500; /* Changement de couleur au survol (orange) */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #risewithgalia-title h1 {
+    font-size: 3em; /* Taille du titre réduite pour les petits écrans */
+  }
+
+  .service-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-description h2 {
+    font-size: 1.5em;
+  }
+
+  .service-description p {
+    font-size: 0.9em;
+  }
+}/* General styles for the entire page */
+body {
+  background-color: #002d4f; /* Fond bleu */
+  color: white; /* Texte blanc */
+  font-family: 'Poppins', Arial, sans-serif; /* Utilisation de la police Poppins */
+  margin: 0;
+  padding: 0;
+}
+
+/* Titre principal de la homepage */
+#risewithgalia-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#risewithgalia-title h1 {
+  font-size: 4em; /* Taille du titre augmentée */
+  font-weight: 600; /* Poids de la police (semi-bold) */
+  margin: 0;
+}
+
+/* Section des services */
+#risewithgalia-services {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espace entre les bandes */
+}
+
+.service-band {
+  display: flex;
+  align-items: center;
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-band:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-image img {
+  width: 150px; /* Taille de l'image */
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-description {
+  flex: 1;
+}
+
+.service-description h2 {
+  font-size: 1.8em;
+  margin: 0 0 10px 0;
+}
+
+.service-description p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: white; /* Couleur blanche pour le lien email */
+  text-decoration: none; /* Supprime le soulignement du lien */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Souligne le lien au survol */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les icônes */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 2em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffa500; /* Changement de couleur au survol (orange) */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #risewithgalia-title h1 {
+    font-size: 3em; /* Taille du titre réduite pour les petits écrans */
+  }
+
+  .service-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-description h2 {
+    font-size: 1.5em;
+  }
+
+  .service-description p {
+    font-size: 0.9em;
+  }
 }
